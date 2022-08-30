@@ -1,7 +1,7 @@
 AutoFire(){
     While GetKeyState("MButton", "P"){
         Click
-        Sleep 20
+        Sleep 25
     }
     return
 }
