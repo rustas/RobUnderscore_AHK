@@ -1,5 +1,5 @@
 FlaskPopper(){
-    Random, rand, 10, 50
+    Random, rand, 10, 25
     CoordMode, Pixel
     FlaskRunning = 0xF9D799
     PixelGetColor, getColorFlask1, 313, 1073, RGB
