@@ -17,11 +17,11 @@ FlaskPopper(){
         SendInput 3
         Sleep rand
     }
-    ; PixelGetColor, getColorFlask4, 451, 1073, RGB
-    ; if(getColorFlask4 != FlaskRunning){
-    ;     SendInput 4
-    ;     Sleep rand
-    ; }
+    PixelGetColor, getColorFlask4, 451, 1073, RGB
+    if(getColorFlask4 != FlaskRunning){
+        SendInput 4
+        Sleep rand
+    }
     PixelGetColor, getColorFlask5, 499, 1073, RGB
     if(getColorFlask5 != FlaskRunning){
         SendInput 5
