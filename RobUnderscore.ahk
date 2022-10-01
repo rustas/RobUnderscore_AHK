@@ -1,16 +1,19 @@
+; Settings
+global CharName = "Beafinder_Bob"
+global flask1 = True
+global flask2 = True
+global flask3 = True
+global flask4 = True
+global flask5 = True
+
 SetWorkingDir %A_ScriptDir%
 if not A_IsAdmin {
 	Run *RunAs "%A_ScriptFullPath%"
 }
 #SingleInstance Force
 
-; MsgBox, %A_ScriptDir%\dev\
-; MsgBox, %A_ScriptDir%\lib\
-; #Include %A_ScriptDir%\dev\
-; #Include %A_ScriptDir%\lib\
-
-#Include, dev\GetMousePos.ahk
 ; #Include, lib\GUI.ahk
+#Include, dev\GetMousePos.ahk
 #Include, lib\FlaskPopper.ahk
 #Include, lib\Quicksilver.ahk
 #Include, lib\Logout.ahk
@@ -27,10 +30,10 @@ while(True){
         F1::ZoneRemaining()
         F2::TY()
         F3::TravelToHideout()
-        F4::Logout() 
+        F4::Logout()
+; ~$^+MButton::AutoFire()
 ; F5::GetMousePos()
 ; 5::Quicksilver() 
         return
     #If
-    Sleep 200
 }
