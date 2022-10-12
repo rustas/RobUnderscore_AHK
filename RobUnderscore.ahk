@@ -1,5 +1,5 @@
 ; Settings
-global CharName = "Beafinder_Bob"
+global CharName = "Beafinder_Rob"
 global flask1 = True
 global flask2 = True
 global flask3 = True
@@ -31,7 +31,6 @@ while(True){
         F2::TY()
         F3::TravelToHideout()
         F4::Logout()
-; ~$^+MButton::AutoFire()
 ; F5::GetMousePos()
 ; 5::Quicksilver() 
         return
