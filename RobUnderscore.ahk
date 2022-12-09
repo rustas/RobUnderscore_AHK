@@ -1,10 +1,10 @@
 ; Settings
-global CharName = "Beafinder_Rob"
+global CharName = "BeafinderBob"
 global flask1 = True
 global flask2 = True
 global flask3 = True
-global flask4 = True
-global flask5 = True
+global flask4 = False
+global flask5 = False
 
 SetWorkingDir %A_ScriptDir%
 if not A_IsAdmin {
@@ -31,8 +31,8 @@ while(True){
         F2::TY()
         F3::TravelToHideout()
         F4::Logout()
+        5::Quicksilver()
 ; F5::GetMousePos()
-; 5::Quicksilver() 
         return
     #If
 }
