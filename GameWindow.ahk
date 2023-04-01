@@ -19,19 +19,20 @@ WinGet Style, Style, A
 
 ; 0xC40000 = WS_BORDER (0x800000) + WS_DLGFRAME (0x400000) + WS_SIZEBOX aka WS_THICKFRAME (0x040000)
 if(Style & 0xC00000) { ; if has WS_CAPTION. Ignore sizebox value.
-WinGetPos, X, Y, Width, Height, A
-WinSet, Style, -0xC40000, A ; removes attributes, including sizebox...doesn't do a strict subtraction
-WinMove,A,,0,0,w,h
-} else {
-WinSet, Style, +0xC40000, A
-; Note: will set WS_SIZEBOX even if not previously present
-if(Width > w - w_wasted) {
-Width := %w%-%w_wasted%
-}
-if(Height > h - h_wasted) {
-Height := %h%-%h_wasted%
-}
-WinMove,A,,%X%,%Y%,%Width%,%Height%
+    WinGetPos, X, Y, Width, Height, A
+    WinSet, Style, -0xC40000, A ; removes attributes, including sizebox...doesn't do a strict subtraction
+    WinMove,A,,0,0,w,h
+} 
+else {
+    WinSet, Style, +0xC40000, A
+    ; Note: will set WS_SIZEBOX even if not previously present
+    if(Width > w - w_wasted) {
+        Width := %w%-%w_wasted%
+    }
+    if(Height > h - h_wasted) {
+        Height := %h%-%h_wasted%
+    }
+    WinMove,A,,%X%,%Y%,%Width%,%Height%
 }
 WinSet Redraw
 Return

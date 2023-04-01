@@ -24,7 +24,7 @@ if not A_IsAdmin {
 
 while(True){
     #If WinActive("ahk_class POEWindowClass") 
-; Sc029::FlaskPopper()
+        Sc029::FlaskPopper()
         ~$^+MButton::AutoFire()
         ~$^LButton::RSI_Preventer()
         F1::ZoneRemaining()
