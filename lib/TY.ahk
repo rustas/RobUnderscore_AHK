@@ -8,7 +8,7 @@ TY(){
     Sleep, 50
     SendInput, {Enter}
     SendInput, ^A{BS}
-    SendInput, {/}kick %CharName%
+    SendInput, {/}leave
     SendInput, {Enter}
     BlockInput Off
     return

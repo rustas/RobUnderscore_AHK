@@ -1,10 +1,10 @@
 ; Settings
-global CharName = "BeafinderBob"
+global CharName = "Bob"
 global flask1 = True
 global flask2 = True
 global flask3 = True
 global flask4 = False
-global flask5 = False
+global flask5 = True
 
 SetWorkingDir %A_ScriptDir%
 if not A_IsAdmin {
@@ -24,7 +24,7 @@ if not A_IsAdmin {
 
 while(True){
     #If WinActive("ahk_class POEWindowClass") 
-        Sc029::FlaskPopper()
+; Sc029::FlaskPopper()
         ~$^+MButton::AutoFire()
         ~$^LButton::RSI_Preventer()
         F1::ZoneRemaining()
