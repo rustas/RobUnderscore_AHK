@@ -1,5 +1,4 @@
 ; Settings
-global CharName = "Bob"
 global flask1 = True
 global flask2 = True
 global flask3 = True
