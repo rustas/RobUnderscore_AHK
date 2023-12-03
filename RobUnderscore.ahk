@@ -1,9 +1,11 @@
 ; Settings
-global flask1 = True
+global flask1 = False
 global flask2 = True
 global flask3 = True
 global flask4 = False
-global flask5 = True
+global flask5 = False
+
+global RobU_Version = 1.2
 
 SetWorkingDir %A_ScriptDir%
 if not A_IsAdmin {
@@ -20,6 +22,7 @@ if not A_IsAdmin {
 #Include, lib\TY.ahk
 #Include, lib\ZoneRemaining.ahk
 #Include, lib\AutoFire.ahk
+#Include, lib\Content.ahk
 
 while(True){
     #If WinActive("ahk_class POEWindowClass") 
@@ -30,6 +33,7 @@ while(True){
         F2::TY()
         F3::TravelToHideout()
         F4::Logout()
+        F5::Content()
         5::Quicksilver()
 ; F5::GetMousePos()
         return
