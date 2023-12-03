@@ -1,11 +1,12 @@
-; Settings
+; Settings, game_mode 1=standalone, 2=Steam
+global game_mode = 2
 global flask1 = False
 global flask2 = True
 global flask3 = True
 global flask4 = False
-global flask5 = False
+global flask5 = False 
 
-global RobU_Version = 1.2
+global RobU_Version = 1.3
 
 SetWorkingDir %A_ScriptDir%
 if not A_IsAdmin {
@@ -23,6 +24,7 @@ if not A_IsAdmin {
 #Include, lib\ZoneRemaining.ahk
 #Include, lib\AutoFire.ahk
 #Include, lib\Content.ahk
+#Include, GameWindow.ahk
 
 while(True){
     #If WinActive("ahk_class POEWindowClass") 
