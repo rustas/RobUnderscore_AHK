@@ -5,7 +5,7 @@ Logout(){
         RunWait, %cportsCommand%
     }
     if(game_mode == 2){
-        cportsCommand := "cports.exe /close * * * * SteamPathOfExile.exe"
+        cportsCommand := "cports.exe /close * * * * PathOfExileSteam.exe"
         Critical
         RunWait, %cportsCommand%
     }

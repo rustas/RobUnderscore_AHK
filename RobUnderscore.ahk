@@ -1,8 +1,8 @@
 ; Settings, game_mode 1=standalone, 2=Steam
 global game_mode = 2
 global flask1 = False
-global flask2 = True
-global flask3 = True
+global flask2 = False
+global flask3 = False
 global flask4 = False
 global flask5 = False 
 
