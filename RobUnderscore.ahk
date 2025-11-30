@@ -1,10 +1,10 @@
 ; Settings, game_mode 1=standalone, 2=Steam
 global game_mode = 2
-global flask1 = False
-global flask2 = False
-global flask3 = False
+global flask1 = True
+global flask2 = True
+global flask3 = True
 global flask4 = False
-global flask5 = False 
+global flask5 = True 
 
 global RobU_Version = 1.3
 
@@ -31,13 +31,15 @@ while(True){
         Sc029::FlaskPopper()
         ~$^+MButton::AutoFire()
         ~$^LButton::RSI_Preventer()
-        F1::ZoneRemaining()
-        F2::TY()
-        F3::TravelToHideout()
         F4::Logout()
-        F5::Content()
+        
         5::Quicksilver()
 ; F5::GetMousePos()
         return
     #If
 }
+
+        ; F1::ZoneRemaining()
+        ; F2::TY()
+        ; F3::TravelToHideout()
+		; F5::Content()
